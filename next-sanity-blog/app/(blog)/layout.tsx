@@ -1,5 +1,5 @@
 import "../globals.css";
-
+import Footer from "./footer"
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import {
@@ -18,6 +18,7 @@ import { sanityFetch } from "@/sanity/lib/fetch";
 import { settingsQuery } from "@/sanity/lib/queries";
 import { resolveOpenGraphImage } from "@/sanity/lib/utils";
 import Link from "next/link";
+import CommentSec from "./commentsec/page";
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await sanityFetch({
@@ -81,7 +82,7 @@ export default async function RootLayout({
               ) : (
                 <div className="flex flex-col items-center py-28 lg:flex-row">
                   <h3 className="mb-10 text-center text-4xl font-bold leading-tight tracking-tighter lg:mb-0 lg:w-1/2 lg:pr-4 lg:text-left lg:text-5xl">
-                    Thanks for visiting.
+                  Please Share 3 Things You Love About Your Cat! 
                   </h3>
                   <div className="flex flex-col items-center justify-center lg:w-1/2 lg:flex-row lg:pl-4">
                     <Link
@@ -99,6 +100,8 @@ export default async function RootLayout({
         </section>
         {isDraftMode && <VisualEditing />}
         <SpeedInsights />
+        <CommentSec/>
+        <Footer/>
       </body>
     </html>
   );
