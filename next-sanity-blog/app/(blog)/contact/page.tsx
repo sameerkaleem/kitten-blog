@@ -75,7 +75,7 @@ const Contact = () => {
           <FaPhoneSquareAlt size="3rem" color="#333" />
           <p className="text-lg font-semibold mt-2">
             <a href="tel:+92-313-22549393" className="hover:underline">
-              Contact us on: +92-313-22549393
+              Contact us on: +92-313-2254939
             </a>
           </p>
         </div>
