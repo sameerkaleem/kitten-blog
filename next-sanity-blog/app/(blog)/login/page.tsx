@@ -10,7 +10,7 @@ const LogIn = () => {
   ];
 
   return (
-    <div className="bg-[#787a79] min-h-screen flex flex-col">
+    <div className="bg-[#57b8e6] min-h-screen flex flex-col">
       <section
         className="relative bg-cover bg-center h-[60vh] flex flex-col"
         
@@ -54,7 +54,7 @@ const LogIn = () => {
       <div className="flex justify-center items-center min-h-screen bg-gray-50">
         <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
           {/* Log In Section */}
-          <div className="bg-[#696968] shadow-md rounded-lg p-8">
+          <div className="bg-[#57b8e6] shadow-md rounded-lg p-8">
             <h2 className="text-3xl font-bold mb-6">Log In</h2>
             <form>
               <div className="mb-4">
@@ -107,7 +107,7 @@ const LogIn = () => {
           </div>
 
           {/* Register Section */}
-          <div className="bg-[#696968] shadow-md rounded-lg p-8">
+          <div className="bg-[#57b8e6] shadow-md rounded-lg p-8">
             <h2 className="text-3xl font-bold mb-6">Register</h2>
             <form>
               <div className="mb-4">
